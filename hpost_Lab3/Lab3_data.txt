@@ -1,0 +1,36 @@
+1234abcd	4	8
+1234abcd	16	4
+1234abcd	24	4
+ffffffff	9	11
+00000000	7	13
+abcdef01	0	2
+abcdef01	1	0
+abcdef01	16	16
+abcdef01	31	16
+
+
+
+1234abcd
+     a    b    c    d
+....1010.1011.1100.1101
+
+            8.7654.3210
+			  
+			1.1100
+			
+			
+
+
+
+
+int a = 8;
+int b = 4;
+char u = 'u';
+
+
+printf("%d %d %c",a,b,u);
+
+char* string = "8 4 u";
+
+sscanf(string,"%d %d %c",&a,&b,&u)
+

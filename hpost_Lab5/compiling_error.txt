@@ -1,0 +1,50 @@
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c: In function 'resolveOpcode':
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:264:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return INSTRUCTION_NAMES[opcode];
+            ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:268:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return PRINT_INSTRUCTION_NAMES[(opcode - 90)];
+            ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c: In function 'dump_memory':
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:306:19: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+           sprintf(resolvedOpcode,"%s",resolveOpcode(abs(firstOne))); //opcode is 0...8
+                   ^
+In file included from E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:8:0:
+C:/Program Files/Haskell Platform/7.10.3/mingw/x86_64-w64-mingw32/include/stdio.h:379:15: note: expected 'char * restrict' but argument is of type 'char **'
+   int __cdecl sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+               ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:310:19: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+           sprintf(resolvedOpcode,"%s",resolveOpcode(abs(firstTwo))); //opcode is 90..99
+                   ^
+In file included from E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:8:0:
+C:/Program Files/Haskell Platform/7.10.3/mingw/x86_64-w64-mingw32/include/stdio.h:379:15: note: expected 'char * restrict' but argument is of type 'char **'
+   int __cdecl sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+               ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:314:19: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+           sprintf(resolvedOpcode,"%s","WTF             ");
+                   ^
+In file included from E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:8:0:
+C:/Program Files/Haskell Platform/7.10.3/mingw/x86_64-w64-mingw32/include/stdio.h:379:15: note: expected 'char * restrict' but argument is of type 'char **'
+   int __cdecl sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+               ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:319:17: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+         sprintf(resolvedOpcode2,"%5s  % 0s",resolvedOpcode,info);
+                 ^
+In file included from E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:8:0:
+C:/Program Files/Haskell Platform/7.10.3/mingw/x86_64-w64-mingw32/include/stdio.h:379:15: note: expected 'char * restrict' but argument is of type 'char **'
+   int __cdecl sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+               ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c: In function 'dump_registers':
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:358:21: warning: implicit declaration of function 'strLen' [-Wimplicit-function-declaration]
+     sprintf(partA + strLen(partA),"R%d: %d",i,cpu->reg[i]);
+                     ^
+E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:358:13: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(partA + strLen(partA),"R%d: %d",i,cpu->reg[i]);
+             ^
+In file included from E:\MEGA\School\Sophomore\CS350\hpost_Lab5\hpost_Lab5_skel.c:8:0:
+C:/Program Files/Haskell Platform/7.10.3/mingw/x86_64-w64-mingw32/include/stdio.h:379:15: note: expected 'char * restrict' but argument is of type 'char **'
+   int __cdecl sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+               ^
+C:\Users\HENRY_~1\AppData\Local\Temp\ccEMc7bY.o: In function `dump_registers':
+E:/MEGA/School/Sophomore/CS350/hpost_Lab5/hpost_Lab5_skel.c:358: undefined reference to `strLen'
+collect2.exe: error: ld returned 1 exit status
