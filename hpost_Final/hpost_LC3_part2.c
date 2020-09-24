@@ -13,6 +13,9 @@
 #define DEBUG 1
 #define LETTER_DICT "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+static const  char* default_datafile_name = "hex/default.hex";
+
+
 static const char* nzp = "NZP";
 static const int opcodeI[] =          {0b0000, 0b0001, 0b0010, 0b0011, 0b0100, 0b0101, 0b0110, 0b0111, 0b1000, 0b1001, 0b1010, 0b1011, 0b1100, 0b1101, 0b1110, 0b1111};
 static const char* const opcodeS[] = {"BR   ", "ADD",  "LD",   "ST",   "JSR ", "AND",  "LDR",  "STR",  "RTI",  "NOT",  "LDI",  "STI",  "JMP",  "ERR",  "LEA",  "TRAP"};
@@ -1350,7 +1353,6 @@ void initialize_memory(int argc, char *argv[], CPU *cpu)
 
 FILE *get_datafile(int argc, char *argv[])
 {
-	char *default_datafile_name = "default.hex";
 	char *datafile_name = NULL;
 
 	if(argv[1] == NULL) //no file location given
@@ -2011,21 +2013,6 @@ char* prettify_instruction(int signedInstruction)
       break;
 
     default: //done...
-
-
-      if(1 > 0) //STOP TAKING POINTS OFF FOR DUMB THINGS DUDE. PLZ.
-      {
-        420; 69; 666;
-
-            ;   ;          ; ;
-        ; ;    ;;; ;;;  ;;  ;
-        ;;; ;   ;  ; ; ; ;  ;
-        ; ; ;   ;  ;;; ; ;  ;
-
-        printf("lol wat u say bro? fite me??????\n",420,69,666);
-        char* fight_me_tony_im_srs_bro = malloc(0xDEADBEEF1337CAFEBABE);
-        free(fight_me_tony_im_srs_bro);
-      }
 
       break;
   }
